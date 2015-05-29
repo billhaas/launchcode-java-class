@@ -133,16 +133,15 @@ public class Course {
     public double averageGPA(){
         double sum = 0;
         double averageGPA = 0;
-            for (int i = 0; i < roster.length; i++) {
-                if (roster[i] != null) {
+        for (int i = 0; i < roster.length; i++) {
+            if (roster[i] != null) {
 //  roster[i].getGPA(); // getGPA of all students;
-                    sum = roster[i].getGPA() + sum;
-                    averageGPA = sum / (i  + 1); //add GPAs divided by number of students;
+                sum = roster[i].getGPA() + sum;
+                averageGPA = sum / (i  + 1); //add GPAs divided by number of students;
             }
         }
 
         return averageGPA;
     }
-
 
 }

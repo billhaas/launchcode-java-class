@@ -1,11 +1,16 @@
 /**
+ * Created by bill on 5/27/15.
+ */
+import java.time.Period;
+
+/**
  * Created by bill on 5/15/15.
  */
 
 
 //Class and properties
-public class Student {
-    private String name;
+public class Student extends Person {
+    //private String name;
     private int studentID;
     private double gpa;
     private int credits;
@@ -14,7 +19,7 @@ public class Student {
 
     //constructor
     public Student(String firstName, String lastName, int studentID) {
-        this.name = firstName + " " + lastName;
+        super(firstName, lastName);
         this.studentID = studentID;
         this.gpa = 0;
         this.credits = 0;
@@ -22,14 +27,10 @@ public class Student {
 
     //new constructor for legacy student
     public Student(String firstName, String lastName, int studentID, double gpa, int credits) {
-        this.name = firstName + " " + lastName;
+        super(firstName, lastName);
         this.studentID = studentID;
         this.gpa = gpa;
         this.credits = credits;
-    }
-
-    public String getName() {
-        return this.name;
     }
 
     public int getStudentID() {
@@ -45,7 +46,7 @@ public class Student {
     }
 
     public String toString() {
-        return this.name + " " + this.studentID;
+        return this.getName() + " " + this.studentID;
     }
 
     public void setCredits(int credits) {
@@ -80,10 +81,10 @@ public class Student {
 
     public Student createLegacy(Student student) {
         //first name is first parent's fullname
-        String newFirstName = this.name;
+        String newFirstName = this.getName();
 
         //last name is the second parent's fullname
-        String newLastName = student.name; //student.getName();
+        String newLastName = student.getName(); //student.getName();
 
         //random student ID
         int newID = 333333;
@@ -103,5 +104,6 @@ public class Student {
         return child;
     }
 }
+
 
 

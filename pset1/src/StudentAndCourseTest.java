@@ -155,12 +155,6 @@ public class StudentAndCourseTest extends TestCase {
 		//c.printRoster();
 		assertEquals(3.25, c.averageGPA());
 
-
-
-
-
-
-
 	}
 
 }

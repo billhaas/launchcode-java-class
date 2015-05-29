@@ -1,42 +1,7 @@
 /**
- * Created by bill on 5/20/15.
+ * Created by bill on 5/27/15.
  */
-/*
-#Creating a Course class
 
-        B. Next, implement the following functionality:
-
-        1 **`toString()`** - should contain the course number and credits
-
-        2 **`addStudent()`** - returns a boolean based on whether or not the student was successfully
-        added to the course. Check to make sure
-        that the student has not already enrolled, and update the number of seats remaining.
-
-        3 **`printRoster()`** - displays a roster with all of the students in the course. Make sure to omit "empty" seats!
-
-        4 **`averageGPA()`** - returns the average GPA of all students enrolled in the course. Make sure to omit "empty" seats!
-
-        Once you are finished, make sure you have written at least one test for each method, and that they pass.
-
-        5. In addition to your unit tests, you should also have a main() method in your program that
-        creates a few instances of students and courses,
-        and tests their functionality.
-
-        C. Then commit and push your code to your repository
-        (select the files -> right click -> git -> Commit -> Commit and Push),
-        and notify an instructor. You can email Doug at: dsshook@gmail.com.
-
-        D. #Additional Features
-This exercise could also be extended to include `Department`, `Instructor`, `University`, and  `Semester` classes.
-        Try designing some of these and incorporating them into this problem set if you have time. Don't forget to test!
-         The Course class should contain the following properties:
-
-        A. //Add these properties to your class, create a constructor, create some accessors, and test!
-        * Name
-        * Credits
-        * Number of seats
-        * Roster of Students
-*/
 
 public class Course {
     private String name;
@@ -133,16 +98,16 @@ public class Course {
     public double averageGPA(){
         double sum = 0;
         double averageGPA = 0;
-            for (int i = 0; i < roster.length; i++) {
-                if (roster[i] != null) {
+        for (int i = 0; i < roster.length; i++) {
+            if (roster[i] != null) {
 //  roster[i].getGPA(); // getGPA of all students;
-                    sum = roster[i].getGPA() + sum;
-                    averageGPA = sum / (i  + 1); //add GPAs divided by number of students;
+                sum = roster[i].getGPA() + sum;
+                averageGPA = sum / (i  + 1); //add GPAs divided by number of students;
             }
         }
 
         return averageGPA;
     }
 
-
 }
+

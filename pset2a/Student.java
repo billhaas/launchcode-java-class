@@ -4,8 +4,8 @@
 
 
 //Class and properties
-public class Student {
-    private String name;
+public class Student extends Person {
+    //private String name;
     private int studentID;
     private double gpa;
     private int credits;
