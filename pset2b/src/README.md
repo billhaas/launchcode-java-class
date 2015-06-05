@@ -11,7 +11,10 @@ As usual, consider:
 
 Construct a base class that contains the common features, and subclasses as necessary. Don't forget to test!
 
-Make sure that there is functionality included to display the questions, the choices (if necessary) and check to see if the answer is correct.
+Make sure that there is functionality included to
+display the questions,
+the choices (if necessary) and
+check to see if the answer is correct.
 
 #Design Change
 
@@ -21,15 +24,23 @@ Think about how this will affect your design, and make the necessary changes. Te
 
 #Putting it all together
 
-You're now ready to present these questions as a Quiz. Create a quiz class that will choose a question, present it to the user, accept the user's response, and then tell them whether their answer was correct or incorrect.
+You're now ready to present these questions as a Quiz. Create a quiz class that will choose a question,
+present it to the user, accept the user's response, and then tell them whether their answer was correct or incorrect.
 
 You have two paths for grabbing user input:
 
-* Scanner can read input from the console (quicker, easier): [Scanner API](http://docs.oracle.com/javase/7/docs/api/java/util/Scanner.html)
-* Dialogs use windows and buttons to get user feedback (more complex, but flashier): [Dialog Examples](https://docs.oracle.com/javase/tutorial/uiswing/components/dialog.html)
+* Scanner can read input from the console (quicker, easier):
+[Scanner API](http://docs.oracle.com/javase/7/docs/api/java/util/Scanner.html)
+* Dialogs use windows and buttons to get user feedback (more complex, but flashier):
+[Dialog Examples](https://docs.oracle.com/javase/tutorial/uiswing/components/dialog.html)
 
-When it comes to testing this portion of the program, be careful: good design states that retrieving input should be kept separate and isolated from the rest of the program. We want to be able to simulate user input in our tests by provided the appropriate values through method calls. We do **not** want to have to sit and type in a bunch of answers to questions just to test our code!
+When it comes to testing this portion of the program, be careful:
+good design states that retrieving input should be kept separate and isolated from the rest of the program.
+We want to be able to simulate user input in our tests by provided the appropriate values through method calls.
+We do **not** want to have to sit and type in a bunch of answers to questions just to test our code!
 
-For this problem set, you know that you have a good design if your Quiz class is fairly short. Remember that each of the Questions should be responsible for displaying themselves and checking the answers, so the Quiz class merely needs to utilize this functionality!
+For this problem set, you know that you have a good design if your Quiz class is fairly short.
+Remember that each of the Question should be responsible for displaying themselves and checking the answers,
+so the Quiz class merely needs to utilize this functionality!
 
 When you are finished, make sure that all of your unit tests pass, commit and push your code, and notify an instructor.

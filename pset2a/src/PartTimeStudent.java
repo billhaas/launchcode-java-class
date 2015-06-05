@@ -41,7 +41,7 @@ public class PartTimeStudent extends Student {
 */
     // The Cat class overrides the instance method in Animal and hides the static method in Animal.
     // The main method in this class creates an instance of Cat and invokes testClassMethod() on the class and testInstanceMethod() on the instance.
-    // ??
+    //let's you run class and  to create objects
     public static void main(String[] args) {
         //Cat myCat = new Cat();
         //Type variableName = new Type(...);
